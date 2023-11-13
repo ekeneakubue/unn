@@ -1,0 +1,37 @@
+body{
+    padding: 0;
+    margin: 0;  
+    background-color: rgb(187, 187, 235);
+}
+
+.header{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;    
+}
+.pane{
+    padding: 6rem 0rem;
+    text-align: center;
+}
+.left{
+    background-color: red;
+    width: 20%;
+}
+.center{
+    background-color: green;
+    width: 60%;
+}
+.right{
+    background-color: blue;
+    width: 20%;
+}
+
+@media(max-width:667px){    
+    .header{
+        flex-direction: column-reverse;
+    }
+    .pane{
+        width: 100%;
+    }
+}
